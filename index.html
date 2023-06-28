@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Types of Specificity</title>
+    <style>
+        /*Arranged according to increasing specificity*/
+        /*More specific means more priority*/
+        * {
+            color: wheat;
+        }
+
+        body {
+            background-image: url("./background_image_3.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        /*   #main {
+         
+            text-align: center;
+            margin-bottom: 0px;
+            margin-left: 0%;
+            overflow: none;
+        }*/
+
+        #underline {
+            font-size: 45pt;
+            text-decoration-color: burlywood;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-align: center;
+            margin-left: 0%;
+        }
+
+        li {
+            color: whitesmoke;
+            font-size: 25px;
+        }
+
+        .first-class {
+            color: whitesmoke;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        li[draggble] {
+            color: darkgreen;
+            font-size: x-large;
+            margin-top: 10px;
+        }
+
+        #first-id {
+            color: whitesmoke;
+            margin-top: 10px;
+            font-size: 25px;
+
+        }
+
+        hr {
+            background-color: red;
+            width: 10%;
+            height: 2px;
+            border-radius: 20px;
+            margin-left: 50%;
+        }
+
+        p {
+            font-weight: 500;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            color: darkred;
+        }
+
+        #logo {
+            float: right;
+            margin-right: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow: auto;
+            border-radius: 50px;
+            border-bottom-left-radius: 180px;
+            border-bottom-right-radius: 180px;
+            border-top-right-radius: 180px;
+            border-top-left-radius: 180px;
+            height: 200px;
+            width: 200px;
+        }
+
+        #div-pos {
+            margin-top: 120px;
+        }
+
+        #navi {
+            margin-top: 80px;
+            margin-bottom: 0px;
+            margin-right: 30px;
+
+        }
+
+        #first {
+            font-size: xx-large;
+            margin-left: 10px;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+
+        #two {
+            font-size: 30pt;
+            margin-left: 10px;
+          
+        }
+        #Two{
+            margin-top: 50px;
+        }
+        #pos-para {
+            color: whitesmoke;
+            margin-left: 20px;
+            font-size: x-large;
+            
+        }
+
+        #poslist{
+            margin-left: 10px;
+            list-style: disc;
+            margin-bottom: 30px;
+        }
+
+        #logo-one {
+            width: 120px;
+            height: 120px;
+            float: left;
+            margin-top: 50px;
+            margin-left: 30px;
+            margin-right: 0px;
+            border-radius: 150px;
+        }
+
+        #web {
+            float: left;
+            margin-right: 0px;
+            font-size: xx-large;
+            margin-left: 25px;
+        }
+
+        #dev {
+            font-size: xx-large;
+            float: left;
+            margin-right: 2px;
+            margin-left: 0%;
+            margin-top: 10%;
+
+        }
+
+        #points {
+            overflow: none;
+            margin-left: 60%px;
+            overflow: none;
+        }
+
+        .type-point {
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        #typesub {
+            margin-left: 10px;
+            margin-top: 50px;
+            font-size: 30pt;
+        }
+
+        #imppara {
+            color: aliceblue;
+            font-size: x-large;
+        }
+
+        #spansp {
+            color: red;
+            font-size: 20px;
+        }
+
+        .paras {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: lightblue;
+        }
+        .notes{
+            color: yellowgreen;
+            font-size: 20px;
+            margin-left:5px;
+        }
+     #important{
+        text-transform: uppercase;
+        margin-top: 50px;
+
+     }
+     #fot{
+        background-color: rgb(53,53,53);
+        width: 100%;
+        height: 300px;
+     }
+     #fot h1{
+        text-align: center;
+        color: chocolate;
+     }
+     #fot p{
+        font-size: x-large;
+        margin-left: 30px;
+        color:azure;
+     }
+     #fot #rights{
+        color:chartreuse;
+        font-size: 15px;
+        margin-left: 10px;
+        font-family:sans-serif;
+     }
+     #fotimg{
+        float: right;
+        margin-right: 150px;
+        border-bottom-left-radius: 30px ;
+        border-bottom-right-radius: 10px;
+     }
+    </style>
+</head>
+
+<body>
+    <h3 id="web">WEB</h3>
+    <img src="robot_image.jpg" alt="robot_image" id="logo-one">
+    <h3 id="dev">Development</h3>
+    <h1><u id="underline">The types of specificity are: </u></h1>
+    <img id="logo" src="css_logo.jpg" alt="logo">
+    <nav id="navi">
+
+        <ol type="i" style="margin-left: 30%" id="navi">
+            <li draggble="true"><a href="#first">Position</a></li>
+            <li draggble="true"><a href="#two">Specificity</a></li>
+            <li draggble="true"><a href="#typesub">Type</a></li>
+            <li draggble="true"><a href="#important">Importance</a></li>
+        </ol>
+    </nav>
+
+
+
+    <hr style="margin-top: 90px" id="hr-top">
+    <div id="div-pos">
+        <h3 id="first">Position:</h3>
+        <ol id="poslist">
+       <li><p id="pos-para">This is according to the lines more you move down it will be accepted.</p></li> 
+       <li><p id="pos-para">Hence C in CSS stands for CASCADING.</p></li> 
+    
+        </ol>
+    </div>
+    <hr>
+    <div id="Two">
+        <span id="two">Specificity: </span>
+        <span id="spansp">(least to most)</span>
+    </div>
+    <ul style="list-style:disc">
+        <li>Specifying a style in general: </li>
+        <p class="paras">This is used if someone wants to target a larger
+            section of code.
+        </p>
+        <li class="first-class">Specifying by class: </li>
+        <p class="paras">This is used to target elements using class.</p>
+        <li attri="True">Specifying by Attributes:</li>
+        <p class="paras">This is used to target element/s with same attribute.</p>
+        <li id="first-id">Specifying by ID's:</li>
+        <p class="paras">This is used to target only one element . <span class="notes">NOTE:<span> 
+            <span class="paras" style="margin-left: 2px"> Only one <span class="notes">ID</span> can be assigned to one element.</span>
+
+        
+    </ul>
+    <hr>
+
+    <h1 id="typesub"><b>The types according to priority: </b></h1>
+    <ul style="list-style:disc">
+        <div>
+            <li>
+                <h1 class="type-point">1st comes inline css because this target only 1 element.</h1>
+            </li>
+            <li>
+                <h1 class="type-point">2nd comes internal css because this targets 1 page.</h1>
+            </li>
+            <li>
+                <h1 class="type-point">3rd comes external css because this targets multiple pages.</h1>
+            </li>
+        </div>
+
+    </ul>
+
+    <hr>
+    <div>
+        <h1 id="important"><b>important tag:</b></h1>
+        <h3 id="imppara">If you mention <span class="notes">!important</span> beside any style that style will be taken
+            rest of the other changes will be ignored.
+        </h3>
+    </div>
+    <hr style="margin-left: 0% ; width: 100%; margin-top: 50px ; margin-bottom: 60px">
+    <footer id="fot"> 
+        <img src="./footer_image.jpg" alt="good bye image" id="fotimg">
+        <h1>HELLO EVERYONE!!</h1>
+        <p>The world is growing fast and everyone should keep on learning new things.</p>
+        <p>Exploring new things in life,</p>
+        <p>Skills and self-development is really important.</p>
+        <p>Here an aspiring software developer presenting , very first simple project purely based on HTML and CSS.</p>
+        <rights id="rights">All rights reserved.</rights>
+    </footer>
+</body>
+
+</html>
